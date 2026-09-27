@@ -42,6 +42,30 @@ document.querySelectorAll('.faq-item').forEach(item => {
   });
 });
 
+// ---- Language switcher ----
+const langSwitch = document.getElementById('langSwitch');
+const langBtn = document.getElementById('langBtn');
+if (langSwitch && langBtn) {
+  langBtn.addEventListener('click', e => {
+    e.stopPropagation();
+    const open = langSwitch.classList.toggle('open');
+    langBtn.setAttribute('aria-expanded', open);
+  });
+  document.addEventListener('click', e => {
+    if (!langSwitch.contains(e.target)) {
+      langSwitch.classList.remove('open');
+      langBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && langSwitch.classList.contains('open')) {
+      langSwitch.classList.remove('open');
+      langBtn.setAttribute('aria-expanded', 'false');
+      langBtn.focus();
+    }
+  });
+}
+
 // ---- Mouse-follow specular glow on glass cards ----
 document.querySelectorAll('.glow-card').forEach(card => {
   card.addEventListener('pointermove', e => {

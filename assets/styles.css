@@ -403,6 +403,44 @@ footer{padding:44px 0 54px}
 .legal-divider{border:none;border-top:1px solid rgba(10,124,105,.12);margin:30px 0}
 @media (max-width:640px){.legal{padding:30px 22px;border-radius:26px}}
 
+/* ============ LANGUAGE SWITCHER ============ */
+.lang-switch{position:relative}
+.lang-btn{
+  display:inline-flex;align-items:center;gap:6px;
+  font-weight:800;font-size:13px;color:var(--ink);
+  padding:9px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.85);
+  background:rgba(255,255,255,.5);
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  transition:background .2s,transform .2s;
+}
+.lang-btn:hover{background:rgba(255,255,255,.78);transform:translateY(-1px)}
+.lang-btn svg{width:15px;height:15px;color:#0a6d5c}
+.lang-btn .chev{width:12px;height:12px;transition:transform .25s}
+.lang-switch.open .lang-btn{background:rgba(255,255,255,.85)}
+.lang-switch.open .chev{transform:rotate(180deg)}
+.lang-menu{
+  position:absolute;top:calc(100% + 12px);right:0;z-index:120;
+  width:300px;display:none;grid-template-columns:1fr 1fr;gap:4px;
+  padding:12px;border-radius:22px;
+  background:linear-gradient(135deg,rgba(255,255,255,.95),rgba(255,255,255,.85));
+  -webkit-backdrop-filter:blur(26px);backdrop-filter:blur(26px);
+  border:1px solid rgba(255,255,255,.9);box-shadow:0 30px 60px -20px rgba(7,94,81,.35);
+}
+.lang-switch.open .lang-menu{display:grid}
+.lang-menu a{
+  display:flex;align-items:center;justify-content:space-between;gap:8px;
+  padding:9px 12px;border-radius:12px;font-size:14px;font-weight:600;
+  color:var(--muted);text-decoration:none;transition:.15s;
+}
+.lang-menu a:hover{background:rgba(20,182,148,.1);color:var(--ink)}
+.lang-menu a.active{color:#0a6d5c;background:rgba(20,182,148,.14);font-weight:800}
+.lang-menu a.active::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--teal);flex-shrink:0}
+[dir="rtl"] .lang-menu{right:auto;left:0}
+@media (max-width:480px){
+  .lang-switch + .btn{display:none}
+  .lang-menu{width:270px}
+}
+
 /* ============ RTL (ARABIC) ============ */
 [dir="rtl"] body *{letter-spacing:normal!important}
 [dir="rtl"] .float-notif{right:auto;left:-6px;transform-origin:top left}
