@@ -1,0 +1,14 @@
+{
+  "name": "MyWarranty",
+  "short_name": "MyWarranty",
+  "description": "Warranty and document expiry tracker. Scan receipts, track warranties and get reminders before anything expires.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#eefaf6",
+  "theme_color": "#0ea389",
+  "icons": [
+    { "src": "/assets/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

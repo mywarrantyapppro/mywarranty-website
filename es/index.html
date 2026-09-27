@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyWarranty — Gestor de garantías y recibos con recordatorios</title>
+<meta name="description" content="Controla tus garantías, recibos y documentos que caducan en un solo lugar. Recibe recordatorios gratis 30, 7 y 1 día antes, incluso con la app cerrada.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://mywarrantyapp.info/es/">
+<meta name="theme-color" content="#0ea389">
+<meta name="application-name" content="MyWarranty">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MyWarranty">
+<meta property="og:url" content="https://mywarrantyapp.info/es/">
+<meta property="og:title" content="MyWarranty — Gestor de garantías y recibos con recordatorios">
+<meta property="og:description" content="Controla tus garantías, recibos y documentos que caducan en un solo lugar. Recibe recordatorios gratis 30, 7 y 1 día antes, incluso con la app cerrada.">
+<meta property="og:image" content="https://mywarrantyapp.info/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MyWarranty — gestor de garantías y caducidad de documentos">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="pt_PT">
+<meta property="og:locale:alternate" content="ar_AR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MyWarranty — Gestor de garantías y recibos con recordatorios">
+<meta name="twitter:description" content="Controla las garantías de tus productos, los recibos y los documentos que caducan en un solo lugar. Recibe recordatorios gratis antes de que caduquen, incluso con la app cerrada.">
+<meta name="twitter:image" content="https://mywarrantyapp.info/assets/og-image.png">
+<link rel="alternate" hreflang="en" href="https://mywarrantyapp.info/">
+<link rel="alternate" hreflang="fr" href="https://mywarrantyapp.info/fr/">
+<link rel="alternate" hreflang="es" href="https://mywarrantyapp.info/es/">
+<link rel="alternate" hreflang="de" href="https://mywarrantyapp.info/de/">
+<link rel="alternate" hreflang="pt" href="https://mywarrantyapp.info/pt/">
+<link rel="alternate" hreflang="ar" href="https://mywarrantyapp.info/ar/">
+<link rel="alternate" hreflang="zh" href="https://mywarrantyapp.info/zh/">
+<link rel="alternate" hreflang="ja" href="https://mywarrantyapp.info/ja/">
+<link rel="alternate" hreflang="hi" href="https://mywarrantyapp.info/hi/">
+<link rel="alternate" hreflang="nl" href="https://mywarrantyapp.info/nl/">
+<link rel="alternate" hreflang="x-default" href="https://mywarrantyapp.info/">
+<link rel="preload" href="../assets/fonts/pjs-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://mywarrantyapp.info/#org",
+      "name": "MyWarranty",
+      "url": "https://mywarrantyapp.info/",
+      "logo": "https://mywarrantyapp.info/assets/apple-touch-icon.png",
+      "email": "mywarrantyapppro@gmail.com"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://mywarrantyapp.info/#website",
+      "url": "https://mywarrantyapp.info/es/",
+      "name": "MyWarranty",
+      "inLanguage": "es",
+      "publisher": { "@id": "https://mywarrantyapp.info/#org" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://mywarrantyapp.info/#app",
+      "name": "MyWarranty",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Android",
+      "url": "https://mywarrantyapp.info/",
+      "description": "Control de garantías y caducidad de documentos. Escanea recibos con OCR en el dispositivo, controla las fechas de caducidad de garantías y documentos, y recibe recordatorios 30, 7 y 1 días antes de que algo caduque, aunque la app esté cerrada.",
+      "inLanguage": "es",
+      "availableLanguage": ["English","French","Spanish","German","Portuguese","Arabic","Chinese","Japanese","Hindi","Dutch"],
+      "featureList": [
+        "Receipt scanning with on-device OCR",
+        "Warranty and document expiry tracking",
+        "Local and cloud reminders 30, 7 and 1 day before expiry",
+        "Cloud backup and real-time sync",
+        "Claim letter generator (PDF / text)",
+        "Calendar, stats dashboard, export and restore",
+        "App lock with PIN and fingerprint",
+        "Works offline"
+      ],
+      "offers": [
+        { "@type": "Offer", "name": "Free plan", "price": "0", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Premium — first year (launch offer)", "price": "20", "priceCurrency": "USD" }
+      ],
+      "publisher": { "@id": "https://mywarrantyapp.info/#org" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mywarrantyapp.info/#faq",
+      "inLanguage": "es",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Funciona sin internet?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sí. Todo funciona sin conexión: escanear, añadir, editar y los recordatorios. Los cambios se sincronizan con tu cuenta cuando vuelves a tener conexión." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué pasa si pierdo el móvil o cambio de dispositivo?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Inicia sesión en el dispositivo nuevo y tu caja fuerte se restaura desde la nube: garantías, documentos, ajustes e historial." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Se suben las fotos de mis recibos?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Hoy por hoy no: las fotos de los recibos se quedan en tu dispositivo. La copia de fotos en la nube forma parte de Premium y llegará pronto." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo controlar también mi pasaporte y mi seguro?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sí. El control de documentos abarca pasaportes, DNI, pólizas de seguro, permisos de conducir, visados y cualquier otra cosa con fecha de caducidad, con sus propios recordatorios." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo me llegan los recordatorios si la app está cerrada?",
+          "acceptedAnswer": { "@type": "Answer", "text": "De dos formas: las notificaciones se programan directamente en tu móvil y, además, un servicio en la nube envía recordatorios a tu dispositivo. Por eso siguen llegando semanas después de la última vez que abriste la app." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Mis datos son privados?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sí. El acceso es estrictamente por cuenta: solo tú puedes leer tu caja fuerte. Además, hay bloqueo de app para tu móvil y, al eliminar tu cuenta, se borran los datos en la nube y los archivos locales." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué plataformas son compatibles?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Android por ahora. La app de iOS comparte el mismo código y está en desarrollo." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="bg" aria-hidden="true">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="blob b4"></div>
+</div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav glass" id="nav">
+  <a class="brand" href="#top">
+    <span class="brand-mark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10v17.2l-2.5-1.7-2.5 1.7-2.5-1.7L7 20.2V3z"/><path d="M9.5 11l1.8 1.8 3.5-3.8"/></svg>
+    </span>
+    <span class="brand-name">MyWarranty</span>
+  </a>
+  <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+    <a href="#problem">El problema</a>
+    <a href="#features">Funciones</a>
+    <a href="#how">Cómo funciona</a>
+    <a href="#pricing">Precios</a>
+    <a href="#faq">Preguntas frecuentes</a>
+  </nav>
+  <div class="nav-cta">
+    <a class="btn btn-primary btn-sm" href="#cta">Recibe novedades</a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow" data-reveal><span class="dot"></span>Control de garantías y caducidad de documentos</span>
+        <h1 data-reveal style="--d:.08s">Todas las garantías. Todos los recibos. Todas las fechas importantes. <span class="hl">En un solo lugar.</span></h1>
+        <p class="lead" data-reveal style="--d:.16s">MyWarranty organiza las garantías de tus compras, los recibos y los documentos que caducan, y te avisa antes de que sea demasiado tarde, aunque la app esté cerrada.</p>
+        <div class="hero-actions" data-reveal style="--d:.24s">
+          <a href="#cta" class="btn btn-primary">Consigue acceso anticipado
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"/><path d="M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#how" class="btn btn-ghost">Descubre cómo funciona</a>
+        </div>
+        <ul class="hero-chips" data-reveal style="--d:.32s">
+          <li>Android ya · iOS pronto</li>
+          <li>Escaneo de recibos con OCR</li>
+          <li>Copia en la nube y sincronización</li>
+          <li>Recordatorios inteligentes</li>
+          <li>10 idiomas</li>
+          <li>Funciona sin conexión</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual" data-reveal style="--d:.2s">
+        <div class="phone-scene">
+          <div class="phone-glow" aria-hidden="true"></div>
+
+          <div class="phone" role="img" aria-label="Vista previa de la app MyWarranty">
+            <div class="screen">
+              <div class="statusbar">
+                <span>9:41</span>
+                <svg viewBox="0 0 46 12" fill="currentColor" aria-hidden="true"><rect x="0" y="7" width="3" height="5" rx="1"/><rect x="5" y="5" width="3" height="7" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="22" y="2.5" width="19" height="7.5" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.2"/><rect x="24" y="4.5" width="11" height="3.5" rx="1"/></svg>
+              </div>
+              <div class="app-head">
+                <span class="app-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10v17.2l-2.5-1.7-2.5 1.7-2.5-1.7L7 20.2V3z"/><path d="M9.5 11l1.8 1.8 3.5-3.8"/></svg></span>
+                <div class="app-title"><strong>MyWarranty</strong><span>12 artículos protegidos</span></div>
+                <span class="app-lockpill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8.5 10.5V7.5a3.5 3.5 0 017 0v3"/></svg>Bloqueado</span>
+              </div>
+              <div class="app-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><span>Busca en tu caja fuerte…</span></div>
+              <div class="app-filters"><span class="on">Todo</span><span>Garantías</span><span>Documentos</span></div>
+              <div class="app-summary">
+                <div><b>$4,120</b><span>Valor protegido</span></div>
+                <div><b>10</b><span>Activos</span></div>
+                <div><b class="warn">2</b><span>Por caducar</span></div>
+              </div>
+              <div class="app-item">
+                <span class="it-ic" style="--tint:#fdeecd">🧺</span>
+                <div class="it-tx"><strong>Bosch Serie 6 Washer</strong><span>Electrodomésticos · $649 · Recibo</span></div>
+                <span class="it-st exp">7 días</span>
+              </div>
+              <div class="app-item">
+                <span class="it-ic" style="--tint:#e2f6ee">🎧</span>
+                <div class="it-tx"><strong>Sony WH-1000XM5</strong><span>Electrónica · $379 · Recibo</span></div>
+                <span class="it-st ok">mar 2027</span>
+              </div>
+              <div class="app-item">
+                <span class="it-ic" style="--tint:#e7eefb">🛂</span>
+                <div class="it-tx"><strong>Pasaporte</strong><span>Documento · Identidad</span></div>
+                <span class="it-st ok">nov 2026</span>
+              </div>
+              <div class="app-item">
+                <span class="it-ic" style="--tint:#f1ebfa">💻</span>
+                <div class="it-tx"><strong>MacBook Air</strong><span>Electrónica · $1,099</span></div>
+                <span class="it-st ok">ene 2027</span>
+              </div>
+              <div class="app-scan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 6v12M6 12h12"/></svg>Escanear recibo con OCR</div>
+              <div class="app-tabbar" aria-hidden="true">
+                <svg class="act" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7"/><path d="M6 9.5V20h12V9.5"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="16" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20h16M7 20v-5M12 20V9M17 20v-8"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3.5 13.5L12 18l8.5-4.5"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="float-notif glass-strong" aria-hidden="true">
+            <span class="fn-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M18.4 9a6.4 6.4 0 10-12.8 0c0 6-2.6 7.6-2.6 7.6h18s-2.6-1.6-2.6-7.6"/><path d="M13.7 20a2 2 0 01-3.4 0"/></svg></span>
+            <div>
+              <small>9:00 · Recordatorio inteligente</small>
+              <strong>La lavadora Bosch caduca en 7 días</strong>
+              <span>Toca para revisar o iniciar una reclamación</span>
+            </div>
+          </div>
+          <div class="float-chip glass fc-1" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8V6a2 2 0 012-2h2M16 4h2a2 2 0 012 2v2M20 16v2a2 2 0 01-2 2h-2M8 20H6a2 2 0 01-2-2v-2"/><circle cx="12" cy="12" r="3.2"/></svg>
+            OCR en el dispositivo
+          </div>
+          <div class="float-chip glass fc-2" aria-hidden="true"><span class="pulse"></span>Sincronizado en la nube</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROBLEM ============ -->
+  <section class="section" id="problem">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow"><span class="dot"></span>El problema</span>
+        <h2>Las garantías caducan en silencio. <span class="hl">El dinero desaparece en silencio.</span></h2>
+        <p>La mayoría de la gente pierde de vista su cobertura a las pocas semanas de comprar. Cuando algo se estropea, el recibo ya no está y el plazo de la garantía ha vencido.</p>
+      </div>
+
+      <div class="problem-grid" data-reveal-group>
+        <article class="p-card glass glow-card">
+          <span class="p-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M9 9l6 6M15 9l-6 6"/></svg></span>
+          <h3>Los recibos de papel se borran o desaparecen</h3>
+          <p>Los recibos térmicos se quedan en blanco, los correos se pierden entre cientos y los portales de las tiendas son un laberinto.</p>
+        </article>
+        <article class="p-card glass glow-card">
+          <span class="p-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M9 9l6 6M15 9l-6 6"/></svg></span>
+          <h3>Las garantías ampliadas caducan sin avisar</h3>
+          <p>Pagaste una cobertura que olvidaste usar, porque nada te avisó de que el plazo estaba a punto de terminar.</p>
+        </article>
+        <article class="p-card glass glow-card">
+          <span class="p-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M9 9l6 6M15 9l-6 6"/></svg></span>
+          <h3>Los documentos también hay que renovarlos</h3>
+          <p>Pasaportes, identificaciones, pólizas de seguro y permisos caducan, normalmente en el peor momento posible.</p>
+        </article>
+        <article class="p-card glass glow-card">
+          <span class="p-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M9 9l6 6M15 9l-6 6"/></svg></span>
+          <h3>Reclamar se convierte en una búsqueda del tesoro</h3>
+          <p>Encontrar el recibo, los datos del producto y la fecha de compra convierte una gestión de 10 minutos en un día entero de búsqueda.</p>
+        </article>
+      </div>
+
+      <div class="fix-banner" data-reveal>
+        <div>
+          <span class="eyebrow eyebrow-light fix-badge"><span class="dot"></span>La solución</span>
+          <h3>MyWarranty soluciona los cuatro problemas.</h3>
+          <p>Escanea un recibo una vez: MyWarranty lo lee, lo archiva, vigila el calendario y te avisa antes de que algo caduque. Tu caja fuerte se copia en tu cuenta, así que perder el móvil nunca significa perder la cobertura.</p>
+        </div>
+        <div class="tl" aria-label="Cronología de recordatorios">
+          <div class="tl-step"><span class="tl-dot">30</span><small>días antes</small></div>
+          <span class="tl-line"></span>
+          <div class="tl-step"><span class="tl-dot">7</span><small>días antes</small></div>
+          <span class="tl-line"></span>
+          <div class="tl-step"><span class="tl-dot">1</span><small>día antes</small></div>
+          <span class="tl-line"></span>
+          <div class="tl-step"><span class="tl-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M18.4 9a6.4 6.4 0 10-12.8 0c0 6-2.6 7.6-2.6 7.6h18s-2.6-1.6-2.6-7.6"/><path d="M13.7 20a2 2 0 01-3.4 0"/></svg></span><small>llega el recordatorio</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow"><span class="dot"></span>Funciones</span>
+        <h2>Diseñada para que olvidar sea <span class="hl">imposible</span></h2>
+      </div>
+
+      <div class="feat-grid" data-reveal-group>
+        <article class="f-card glass glow-card">
+          <span class="f-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="15" rx="3"/><circle cx="12" cy="12" r="3.4"/><path d="M12 8.6V12l1.7 1.3"/></svg></span>
+          <h3>Una caja fuerte para todo</h3>
+          <p>Las garantías conviven con los documentos que caducan: pasaporte, DNI, seguro, permiso de conducir, visado. Busca, ordena, filtra y consulta el estado de un vistazo: activo, a punto de caducar o caducado.</p>
+          <span class="tag">Garantías + documentos en un solo lugar</span>
+        </article>
+        <article class="f-card glass glow-card">
+          <span class="f-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8V6a2 2 0 012-2h2M16 4h2a2 2 0 012 2v2M20 16v2a2 2 0 01-2 2h-2M8 20H6a2 2 0 01-2-2v-2"/><circle cx="12" cy="12" r="3.2"/></svg></span>
+          <h3>Escanea un recibo y el resto es automático</h3>
+          <p>Apunta la cámara a cualquier recibo. El OCR en el dispositivo lee la tienda, el producto, la fecha y el total, y rellena el formulario por ti. Todo se procesa en el móvil: no hace falta subir nada para escanear.</p>
+          <span class="tag">Escaneo OCR → datos autorrellenados</span>
+        </article>
+        <article class="f-card glass glow-card">
+          <span class="f-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18.4 9a6.4 6.4 0 10-12.8 0c0 6-2.6 7.6-2.6 7.6h18s-2.6-1.6-2.6-7.6"/><path d="M13.7 20a2 2 0 01-3.4 0"/></svg></span>
+          <h3>Recordatorios que nunca duermen</h3>
+          <p>Recibe un aviso 30, 7 y 1 días antes de cada caducidad, a las 9:00, tanto para garantías como para documentos. Se programan en tu móvil y se envían también desde la nube, así que te avisamos incluso con la app cerrada.</p>
+          <span class="tag">Avisos del móvil y de la nube, incluso con la app cerrada</span>
+        </article>
+        <article class="f-card glass glow-card">
+          <span class="f-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18.5a4.5 4.5 0 01-.9-8.9A6 6 0 0117.8 11h.2a3.75 3.75 0 010 7.5H7z"/><path d="M12 16v-4.5M10.2 13.2L12 11.4l1.8 1.8"/></svg></span>
+          <h3>Copia en la nube y sincronización en tiempo real</h3>
+          <p>Inicia sesión y tu caja fuerte se copia automáticamente. ¿Móvil nuevo? Inicia sesión y todo vuelve. Los cambios se sincronizan en tiempo real y las eliminaciones se propagan de forma segura entre dispositivos.</p>
+          <span class="tag">Móvil nuevo → inicia sesión → todo restaurado</span>
+        </article>
+        <article class="f-card glass glow-card">
+          <span class="f-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/><path d="M14 3v5h5"/><path d="M9.5 14.5l1.8 1.8 3.4-3.6"/></svg></span>
+          <h3>Asistente de reclamaciones con cartas generadas</h3>
+          <p>¿Se ha roto algo? Describe lo que ha pasado y MyWarranty redacta tu reclamación: una carta profesional en PDF con los datos del producto y el recibo adjunto, o texto plano para enviar por correo. Se guarda el historial de cada artículo.</p>
+          <span class="tag">Carta de reclamación en PDF con el recibo adjunto</span>
+        </article>
+        <article class="f-card glass glow-card">
+          <span class="f-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 20h16"/><path d="M7 20v-5M12 20V9M17 20v-8"/></svg></span>
+          <h3>Panel de estadísticas</h3>
+          <p>Descubre el valor que proteges: artículos registrados, valor total, próximos a caducar y ya caducados, además del valor por categoría y tus tiendas con más gasto.</p>
+          <span class="tag">Sabe cuánto vale tu cobertura</span>
+        </article>
+        <article class="f-card glass glow-card">
+          <span class="f-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="16" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span>
+          <h3>Vista de calendario</h3>
+          <p>Una cuadrícula mensual muestra cada caducidad con un punto de color: verde (activo), ámbar (por caducar) y rojo (caducado). Toca cualquier día para ver qué caduca exactamente.</p>
+          <span class="tag">Tus plazos, de un vistazo</span>
+        </article>
+        <article class="f-card glass glow-card">
+          <span class="f-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v10M8 10.5l4 4 4-4"/><path d="M4.5 19.5h15"/></svg></span>
+          <h3>Exporta, restaura y controla tus datos</h3>
+          <p>Exporta un CSV, un informe PDF con formato o una copia de seguridad JSON completa. Restaura cuando quieras, y al eliminar tu cuenta se borran definitivamente los datos en la nube y los archivos locales.</p>
+          <span class="tag">Tus datos son tuyos</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section" id="how">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow"><span class="dot"></span>Cómo funciona</span>
+        <h2>Tres pasos. <span class="hl">Y luego olvídate.</span></h2>
+      </div>
+      <div class="steps" data-reveal-group>
+        <article class="step glass glow-card">
+          <span class="step-num">1</span>
+          <h3>Escanea o añade</h3>
+          <p>Haz una foto al recibo y el OCR rellena la tienda, el producto, la fecha y el precio. O añade cualquier artículo a mano en segundos.</p>
+        </article>
+        <span class="step-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"/><path d="M13 6l6 6-6 6"/></svg></span>
+        <article class="step glass glow-card">
+          <span class="step-num">2</span>
+          <h3>Fija la caducidad</h3>
+          <p>Elige el plazo de garantía o la fecha de caducidad del documento. Los colores de estado y el calendario hacen el resto.</p>
+        </article>
+        <span class="step-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"/><path d="M13 6l6 6-6 6"/></svg></span>
+        <article class="step glass glow-card">
+          <span class="step-num">3</span>
+          <h3>Relájate</h3>
+          <p>Los recordatorios llegan a los 30, 7 y 1 días, siempre puntuales. Si algo se estropea, presenta una reclamación con un toque.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRIVACY & PERSONALIZATION ============ -->
+  <section class="section" id="privacy">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow"><span class="dot"></span>Privacidad y personalización</span>
+        <h2>Privada por diseño. <span class="hl">Tuya en todos los idiomas.</span></h2>
+      </div>
+
+      <div class="priv-grid" data-reveal-group>
+        <article class="v-card glass glow-card">
+          <span class="v-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8.5 10.5V7.5a3.5 3.5 0 017 0v3"/></svg></span>
+          <span class="pin" aria-hidden="true"><i class="f"></i><i class="f"></i><i></i><i></i></span>
+          <h3>Bloqueo de la app</h3>
+          <p>Protege tu caja fuerte con un PIN de 4 dígitos y desbloqueo por huella. La app se bloquea sola 10 segundos después de que la dejes y, tras demasiados intentos fallidos, se bloquea por completo.</p>
+        </article>
+        <article class="v-card glass glow-card">
+          <span class="v-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7.5 3v5.5c0 4.8-3.2 7.7-7.5 9.5-4.3-1.8-7.5-4.7-7.5-9.5V6z"/><path d="M9 12l2 2 4-4.5"/></svg></span>
+          <h3>Tu cuenta, tus datos</h3>
+          <p>Cada cuenta solo puede leer su propia caja fuerte. Las fotos de los recibos se quedan en tu dispositivo: no se suben. Al eliminar tu cuenta se borran los datos en la nube, los archivos locales y la propia cuenta.</p>
+        </article>
+        <article class="v-card glass glow-card">
+          <span class="v-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.7 2.3 4 5.2 4 8.5s-1.3 6.2-4 8.5c-2.7-2.3-4-5.2-4-8.5s1.3-6.2 4-8.5z"/></svg></span>
+          <div class="langs" aria-label="Idiomas disponibles"><span lang="en">English</span><span lang="fr">Français</span><span lang="ar" dir="rtl">العربية</span><span lang="es">Español</span><span lang="pt">Português</span><span lang="zh">中文</span><span lang="ja">日本語</span><span lang="hi">हिन्दी</span><span lang="nl">Nederlands</span><span lang="de">Deutsch</span></div>
+          <h3>10 idiomas y formatos locales</h3>
+          <p>Con compatibilidad de derecha a izquierda para el árabe. Los precios se muestran automáticamente en la moneda de tu país.</p>
+        </article>
+        <article class="v-card glass glow-card">
+          <span class="v-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13.5A8 8 0 1110.5 4 6.5 6.5 0 0020 13.5z"/></svg></span>
+          <span class="mini-toggle" aria-hidden="true"><span class="knob"></span></span>
+          <h3>Modo oscuro</h3>
+          <p>Un tema oscuro cuidado al detalle sigue el ajuste de tu sistema, o mantén el modo claro u oscuro, tú eliges. Al instante, en todas partes.</p>
+        </article>
+        <article class="v-card glass glow-card" style="grid-column:1/-1;flex-direction:row;align-items:center;gap:20px">
+          <span class="v-ic" style="flex-shrink:0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 9.5a12 12 0 0116 0"/><path d="M7 13a8 8 0 0110 0"/><path d="M10 16.5a4 4 0 014 0"/><circle cx="12" cy="19.5" r="1" fill="currentColor" stroke="none"/></svg></span>
+          <div>
+            <h3>Funciona sin conexión y se sincroniza cuando puede</h3>
+            <p style="margin-top:6px">Añade, edita y escanea sin conexión: todo se guarda primero en el dispositivo. Cuando vuelvas a tener conexión, los cambios se sincronizan solos con tu cuenta. Tu caja fuerte nunca se bloquea por falta de señal.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow"><span class="dot"></span>Precios</span>
+        <h2>Empieza gratis. <span class="hl">Pásate a Premium cuando lo necesites.</span></h2>
+        <p>Todas las funciones esenciales son gratis para 5 artículos. Premium es un plan anual sencillo: sin niveles ni sorpresas.</p>
+      </div>
+
+      <div class="plans" data-reveal-group>
+        <article class="plan glass glow-card">
+          <h3>Gratis</h3>
+          <div class="price"><b>$0</b><span>/ para siempre</span></div>
+          <p class="plan-sub">Hasta 5 artículos en total (garantías + documentos)</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg>Escaneo de recibos con OCR</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg>Recordatorios 30, 7 y 1 día antes (locales + aviso desde la nube)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg>Control de documentos</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg>Calendario, búsqueda, orden y colores de estado</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg>Panel de estadísticas</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg>Generador de cartas de reclamación (PDF / texto)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg>Copia en la nube y sincronización</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg>Bloqueo de la app (PIN + huella)</li>
+          </ul>
+          <a href="#cta" class="btn btn-ghost btn-block">Empieza gratis</a>
+        </article>
+
+        <article class="plan plan-pro">
+          <span class="launch-badge">Oferta de lanzamiento — primer año $20</span>
+          <h3>Premium</h3>
+          <div class="price"><s>$29</s><b>$20</b><span>/ primer año</span></div>
+          <p class="plan-sub">Después $29/año. Cancela cuando quieras.*</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg><span><strong>Sin límite</strong> de garantías y documentos</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg><span><strong>Plan familiar</strong> incluido: cubre hasta 5 miembros de la familia (se activará con la facturación)</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg><span><strong>Copia en la nube de las fotos</strong> de recibos (próximamente)</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg><span>Todo lo de Gratis, siempre</span></li>
+          </ul>
+          <a href="#cta" class="btn btn-light btn-block">Pasar a Premium</a>
+        </article>
+      </div>
+
+      <div class="compare glass" data-reveal>
+        <div class="cmp-scroll">
+          <div class="cmp-row cmp-head"><span>Función</span><span>Gratis</span><span>Premium</span></div>
+          <div class="cmp-row"><span>Artículos (garantías + documentos)</span><span class="cmp-strong">Hasta 5</span><span class="cmp-strong cmp-pro">Ilimitados</span></div>
+          <div class="cmp-row"><span>Escaneo de recibos con OCR</span><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
+          <div class="cmp-row"><span>Recordatorios (locales + aviso desde la nube)</span><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
+          <div class="cmp-row"><span>Copia en la nube y sincronización</span><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
+          <div class="cmp-row"><span>Carta de reclamación en PDF</span><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
+          <div class="cmp-row"><span>Plan familiar</span><span class="cmp-no">—</span><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
+          <div class="cmp-row"><span>Copia de fotos en la nube</span><span class="cmp-no">—</span><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
+        </div>
+      </div>
+      <p class="fineprint">* Suscripción anual con renovación automática. Precios en USD; la moneda local se muestra en la app. Oferta de lanzamiento: primer año por $20 en vez de $29 para nuevos suscriptores.</p>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow"><span class="dot"></span>Dudas</span>
+        <h2>Preguntas frecuentes</h2>
+      </div>
+
+      <div class="faq-list" data-reveal-group>
+        <div class="faq-item glass">
+          <button class="faq-q" id="faq-q1" aria-expanded="false" aria-controls="faq-a1">¿Funciona sin internet?<span class="faq-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 6v12M6 12h12"/></svg></span></button>
+          <div class="faq-a" id="faq-a1" role="region" aria-labelledby="faq-q1"><p>Sí. Todo funciona sin conexión: escanear, añadir, editar y los recordatorios. Los cambios se sincronizan con tu cuenta cuando vuelves a tener conexión.</p></div>
+        </div>
+        <div class="faq-item glass">
+          <button class="faq-q" id="faq-q2" aria-expanded="false" aria-controls="faq-a2">¿Qué pasa si pierdo el móvil o cambio de dispositivo?<span class="faq-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 6v12M6 12h12"/></svg></span></button>
+          <div class="faq-a" id="faq-a2" role="region" aria-labelledby="faq-q2"><p>Inicia sesión en el dispositivo nuevo y tu caja fuerte se restaura desde la nube: garantías, documentos, ajustes e historial.</p></div>
+        </div>
+        <div class="faq-item glass">
+          <button class="faq-q" id="faq-q3" aria-expanded="false" aria-controls="faq-a3">¿Se suben las fotos de mis recibos?<span class="faq-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 6v12M6 12h12"/></svg></span></button>
+          <div class="faq-a" id="faq-a3" role="region" aria-labelledby="faq-q3"><p>Hoy por hoy no: las fotos de los recibos se quedan en tu dispositivo. La copia de fotos en la nube forma parte de Premium y llegará pronto.</p></div>
+        </div>
+        <div class="faq-item glass">
+          <button class="faq-q" id="faq-q4" aria-expanded="false" aria-controls="faq-a4">¿Puedo controlar también mi pasaporte y mi seguro?<span class="faq-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 6v12M6 12h12"/></svg></span></button>
+          <div class="faq-a" id="faq-a4" role="region" aria-labelledby="faq-q4"><p>Sí. El control de documentos abarca pasaportes, DNI, pólizas de seguro, permisos de conducir, visados y cualquier otra cosa con fecha de caducidad, con sus propios recordatorios.</p></div>
+        </div>
+        <div class="faq-item glass">
+          <button class="faq-q" id="faq-q5" aria-expanded="false" aria-controls="faq-a5">¿Cómo me llegan los recordatorios si la app está cerrada?<span class="faq-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 6v12M6 12h12"/></svg></span></button>
+          <div class="faq-a" id="faq-a5" role="region" aria-labelledby="faq-q5"><p>De dos formas: las notificaciones se programan directamente en tu móvil y, además, un servicio en la nube envía recordatorios a tu dispositivo. Por eso siguen llegando semanas después de la última vez que abriste la app.</p></div>
+        </div>
+        <div class="faq-item glass">
+          <button class="faq-q" id="faq-q6" aria-expanded="false" aria-controls="faq-a6">¿Mis datos son privados?<span class="faq-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 6v12M6 12h12"/></svg></span></button>
+          <div class="faq-a" id="faq-a6" role="region" aria-labelledby="faq-q6"><p>Sí. El acceso es estrictamente por cuenta: solo tú puedes leer tu caja fuerte. Además, hay bloqueo de app para tu móvil y, al eliminar tu cuenta, se borran los datos en la nube y los archivos locales.</p></div>
+        </div>
+        <div class="faq-item glass">
+          <button class="faq-q" id="faq-q7" aria-expanded="false" aria-controls="faq-a7">¿Qué plataformas son compatibles?<span class="faq-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 6v12M6 12h12"/></svg></span></button>
+          <div class="faq-a" id="faq-a7" role="region" aria-labelledby="faq-q7"><p>Android por ahora. La app de iOS comparte el mismo código y está en desarrollo.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="section" id="cta" style="padding-top:20px">
+    <div class="container">
+      <div class="cta-panel" data-reveal>
+        <span class="cta-glow g1" aria-hidden="true"></span>
+        <span class="cta-glow g2" aria-hidden="true"></span>
+        <span class="eyebrow eyebrow-light"><span class="dot"></span>Cuando tú quieras</span>
+        <h2>No vuelvas a perder una garantía <span class="hl-light">nunca más.</span></h2>
+        <p>Escanea una vez y relájate durante años. MyWarranty vigila cada fecha de caducidad para que aproveches la cobertura que ya has pagado.</p>
+        <div class="cta-actions">
+          <a href="mailto:mywarrantyapppro@gmail.com?subject=Quiero%20que%20me%20avises%20cuando%20MyWarranty%20se%20lance%20(Android)" class="btn btn-light">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M18.4 9a6.4 6.4 0 10-12.8 0c0 6-2.6 7.6-2.6 7.6h18s-2.6-1.6-2.6-7.6"/><path d="M13.7 20a2 2 0 01-3.4 0"/></svg>
+            Avísame — lanzamiento en Android
+          </a>
+          <a href="mailto:mywarrantyapppro@gmail.com?subject=Quiero%20que%20me%20avises%20cuando%20MyWarranty%20llegue%20a%20iOS" class="btn btn-glass">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>
+            Avísame — iOS
+          </a>
+        </div>
+        <p class="cta-meta">Android e iOS • Gratis hasta 5 artículos • Premium $29/año — primer año $20</p>
+        <a class="cta-mail" href="mailto:mywarrantyapppro@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="13" rx="2.5"/><path d="M4 7l8 6 8-6"/></svg>
+          mywarrantyapppro@gmail.com
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="foot-rule">
+      <div class="foot-brand">
+        <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10v17.2l-2.5-1.7-2.5 1.7-2.5-1.7L7 20.2V3z"/><path d="M9.5 11l1.8 1.8 3.5-3.8"/></svg></span>
+        <small><strong style="color:var(--ink);font-size:15px">MyWarranty</strong><br>Control de garantías y caducidad de documentos</small>
+      </div>
+      <nav class="foot-links" aria-label="Pie de página">
+        <a href="#features">Funciones</a>
+        <a href="#pricing">Precios</a>
+        <a href="#faq">Preguntas frecuentes</a>
+        <a href="../privacy/">Privacidad</a>
+        <a href="mailto:mywarrantyapppro@gmail.com">Contacto</a>
+      </nav>
+      <div class="foot-note">© 2026 MyWarranty<br>Visión general del producto: funciones y precios</div>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/main.js" defer></script>
+</body>
+</html>

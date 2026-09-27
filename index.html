@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyWarranty — Warranty Tracker &amp; Receipt Organizer App</title>
+<meta name="description" content="Track product warranties, receipts and expiring documents in one place. Get free reminders 30, 7 and 1 day before they expire — even when the app is closed.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://mywarrantyapp.info/">
+<meta name="theme-color" content="#0ea389">
+<meta name="application-name" content="MyWarranty">
+<link rel="manifest" href="site.webmanifest">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MyWarranty">
+<meta property="og:url" content="https://mywarrantyapp.info/">
+<meta property="og:title" content="MyWarranty — Warranty Tracker &amp; Receipt Organizer App">
+<meta property="og:description" content="Track product warranties, receipts and expiring documents in one place. Get free reminders 30, 7 and 1 day before they expire — even when the app is closed.">
+<meta property="og:image" content="https://mywarrantyapp.info/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MyWarranty — warranty and document expiry tracker">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="pt_PT">
+<meta property="og:locale:alternate" content="ar_AR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MyWarranty — Warranty Tracker &amp; Receipt Organizer App">
+<meta name="twitter:description" content="Track product warranties, receipts and expiring documents in one place. Get free reminders before they expire — even when the app is closed.">
+<meta name="twitter:image" content="https://mywarrantyapp.info/assets/og-image.png">
+<link rel="alternate" hreflang="en" href="https://mywarrantyapp.info/">
+<link rel="alternate" hreflang="fr" href="https://mywarrantyapp.info/fr/">
+<link rel="alternate" hreflang="es" href="https://mywarrantyapp.info/es/">
+<link rel="alternate" hreflang="de" href="https://mywarrantyapp.info/de/">
+<link rel="alternate" hreflang="pt" href="https://mywarrantyapp.info/pt/">
+<link rel="alternate" hreflang="ar" href="https://mywarrantyapp.info/ar/">
+<link rel="alternate" hreflang="zh" href="https://mywarrantyapp.info/zh/">
+<link rel="alternate" hreflang="ja" href="https://mywarrantyapp.info/ja/">
+<link rel="alternate" hreflang="hi" href="https://mywarrantyapp.info/hi/">
+<link rel="alternate" hreflang="nl" href="https://mywarrantyapp.info/nl/">
+<link rel="alternate" hreflang="x-default" href="https://mywarrantyapp.info/">
+<link rel="preload" href="assets/fonts/pjs-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://mywarrantyapp.info/#org",
+      "name": "MyWarranty",
+      "url": "https://mywarrantyapp.info/",
+      "logo": "https://mywarrantyapp.info/assets/apple-touch-icon.png",
+      "email": "mywarrantyapppro@gmail.com"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://mywarrantyapp.info/#website",
+      "url": "https://mywarrantyapp.info/",
+      "name": "MyWarranty",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://mywarrantyapp.info/#org" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://mywarrantyapp.info/#app",
+      "name": "MyWarranty",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Android",
+      "url": "https://mywarrantyapp.info/",
+      "description": "Warranty and document expiry tracker. Scan receipts with on-device OCR, track warranty and document expiry dates, and get reminders 30, 7 and 1 day before something expires — even when the app is closed.",
+      "inLanguage": "en",
+      "availableLanguage": ["English","French","Spanish","German","Portuguese","Arabic","Chinese","Japanese","Hindi","Dutch"],
+      "featureList": [
+        "Receipt scanning with on-device OCR",
+        "Warranty and document expiry tracking",
+        "Local and cloud reminders 30, 7 and 1 day before expiry",
+        "Cloud backup and real-time sync",
+        "Claim letter generator (PDF / text)",
+        "Calendar, stats dashboard, export and restore",
+        "App lock with PIN and fingerprint",
+        "Works offline"
+      ],
+      "offers": [
+        { "@type": "Offer", "name": "Free plan", "price": "0", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Premium — first year (launch offer)", "price": "20", "priceCurrency": "USD" }
+      ],
+      "publisher": { "@id": "https://mywarrantyapp.info/#org" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mywarrantyapp.info/#faq",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does it work without internet?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Everything works offline — scanning, adding, editing, reminders. Changes sync to your account when you're back online." }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if I lose my phone or change devices?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sign in on the new device and your vault is restored from the cloud: warranties, documents, settings and history." }
+        },
+        {
+          "@type": "Question",
+          "name": "Are my receipt photos uploaded?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Not today — receipt photos stay on your device. Cloud photo backup is part of Premium and is coming soon." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I track my passport and insurance too?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. The documents tracker covers passports, ID cards, insurance policies, driver's licenses, visas and anything else with an expiry date — with its own reminders." }
+        },
+        {
+          "@type": "Question",
+          "name": "How do the reminders reach me if the app is closed?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Two ways: notifications are scheduled directly on your phone, and a cloud service also pushes reminders to your device. That's why they still arrive weeks after you last opened the app." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my data private?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Access is strictly per-account — only you can read your vault. There's an app lock for your phone, and deleting your account erases your cloud data and local files." }
+        },
+        {
+          "@type": "Question",
+          "name": "Which platforms are supported?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Android today. The iOS app shares the same codebase and is in development." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="bg" aria-hidden="true">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="blob b4"></div>
+</div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav glass" id="nav">
+  <a class="brand" href="#top">
+    <span class="brand-mark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10v17.2l-2.5-1.7-2.5 1.7-2.5-1.7L7 20.2V3z"/><path d="M9.5 11l1.8 1.8 3.5-3.8"/></svg>
+    </span>
+    <span class="brand-name">MyWarranty</span>
+  </a>
+  <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+    <a href="#problem">The problem</a>
+    <a href="#features">Features</a>
+    <a href="#how">How it works</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <div class="nav-cta">
+    <a class="btn btn-primary btn-sm" href="#cta">Get updates</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow" data-reveal><span class="dot"></span>Warranty &amp; document expiry tracker</span>
+        <h1 data-reveal style="--d:.08s">Every warranty. Every receipt. Every important date. <span class="hl">In one place.</span></h1>
+        <p class="lead" data-reveal style="--d:.16s">MyWarranty keeps your purchase warranties, receipts and expiring documents organized — and reminds you before it's too late, even when the app is closed.</p>
+        <div class="hero-actions" data-reveal style="--d:.24s">
+          <a href="#cta" class="btn btn-primary">Get early access
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"/><path d="M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#how" class="btn btn-ghost">See how it works</a>
+        </div>
+        <ul class="hero-chips" data-reveal style="--d:.32s">
+          <li>Android now · iOS soon</li>
+          <li>Receipt scanning with OCR</li>
+          <li>Cloud backup &amp; sync</li>
+          <li>Smart reminders</li>
+          <li>10 languages</li>
+          <li>Works offline</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual" data-reveal style="--d:.2s">
+        <div class="phone-scene">
+          <div class="phone-glow" aria-hidden="true"></div>
+
+          <div class="phone" role="img" aria-label="MyWarranty app preview">
+            <div class="screen">
+              <div class="statusbar">
+                <span>9:41</span>
+                <svg viewBox="0 0 46 12" fill="currentColor" aria-hidden="true"><rect x="0" y="7" width="3" height="5" rx="1"/><rect x="5" y="5" width="3" height="7" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="22" y="2.5" width="19" height="7.5" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.2"/><rect x="24" y="4.5" width="11" height="3.5" rx="1"/></svg>
+              </div>
+              <div class="app-head">
+                <span class="app-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10v17.2l-2.5-1.7-2.5 1.7-2.5-1.7L7 20.2V3z"/><path d="M9.5 11l1.8 1.8 3.5-3.8"/></svg></span>
+                <div class="app-title"><strong>MyWarranty</strong><span>12 items protected</span></div>
+                <span class="app-lockpill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8.5 10.5V7.5a3.5 3.5 0 017 0v3"/></svg>Locked</span>
+              </div>
+              <div class="app-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><span>Search your vault…</span></div>
+              <div class="app-filters"><span class="on">All</span><span>Warranties</span><span>Documents</span></div>
+              <div class="app-summary">
+                <div><b>$4,120</b><span>Vault value</span></div>
+                <div><b>10</b><span>Active</span></div>
+                <div><b class="warn">2</b><span>Expiring</span></div>
+              </div>
+              <div class="app-item">
+                <span class="it-ic" style="--tint:#fdeecd">🧺</span>
+                <div class="it-tx"><strong>Bosch Serie 6 Washer</strong><span>Appliances · $649 · Receipt</span></div>
+                <span class="it-st exp">7 days</span>
+              </div>
+              <div class="app-item">
+                <span class="it-ic" style="--tint:#e2f6ee">🎧</span>
+                <div class="it-tx"><strong>Sony WH-1000XM5</strong><span>Electronics · $379 · Receipt</span></div>
+                <span class="it-st ok">Mar 2027</span>
+              </div>
+              <div class="app-item">
+                <span class="it-ic" style="--tint:#e7eefb">🛂</span>
+                <div class="it-tx"><strong>Passport</strong><span>Document · ID</span></div>
+                <span class="it-st ok">Nov 2026</span>
+              </div>
+              <div class="app-item">
+                <span class="it-ic" style="--tint:#f1ebfa">💻</span>
+                <div class="it-tx"><strong>MacBook Air</strong><span>Electronics · $1,099</span></div>
+                <span class="it-st ok">Jan 2027</span>
+              </div>
+              <div class="app-scan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 6v12M6 12h12"/></svg>Scan receipt with OCR</div>
+              <div class="app-tabbar" aria-hidden="true">
+                <svg class="act" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7"/><path d="M6 9.5V20h12V9.5"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="16" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20h16M7 20v-5M12 20V9M17 20v-8"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3.5 13.5L12 18l8.5-4.5"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="float-notif glass-strong" aria-hidden="true">
+            <span class="fn-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M18.4 9a6.4 6.4 0 10-12.8 0c0 6-2.6 7.6-2.6 7.6h18s-2.6-1.6-2.6-7.6"/><path d="M13.7 20a2 2 0 01-3.4 0"/></svg></span>
+            <div>
+              <small>9:00 · Smart reminder</small>
+              <strong>Bosch washer ends in 7 days</strong>
+              <span>Tap to review or start a claim</span>
+            </div>
+          </div>
+          <div class="float-chip glass fc-1" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8V6a2 2 0 012-2h2M16 4h2a2 2 0 012 2v2M20 16v2a2 2 0 01-2 2h-2M8 20H6a2 2 0 01-2-2v-2"/><circle cx="12" cy="12" r="3.2"/></svg>
+            On-device OCR
+          </div>
+          <div class="float-chip glass fc-2" aria-hidden="true"><span class="pulse"></span>Cloud synced</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROBLEM ============ -->
+  <section class="section" id="problem">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow"><span class="dot"></span>The problem</span>
+        <h2>Warranties quietly expire. <span class="hl">Money quietly disappears.</span></h2>
+        <p>Most people lose track of their coverage weeks after buying. When something breaks, the receipt is gone and the warranty window is closed.</p>
+      </div>
+
+      <div class="problem-grid" data-reveal-group>
+        <article class="p-card glass glow-card">
+          <span class="p-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M9 9l6 6M15 9l-6 6"/></svg></span>
+          <h3>Paper receipts fade — or vanish</h3>
+          <p>Thermal receipts turn blank, emails get buried, and store portals are painful to dig through.</p>
+        </article>
+        <article class="p-card glass glow-card">
+          <span class="p-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M9 9l6 6M15 9l-6 6"/></svg></span>
+          <h3>Extended warranties expire silently</h3>
+          <p>You paid for coverage you forgot to use — because nothing told you the deadline was close.</p>
+        </article>
+        <article class="p-card glass glow-card">
+          <span class="p-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M9 9l6 6M15 9l-6 6"/></svg></span>
+          <h3>Documents need renewals too</h3>
+          <p>Passports, IDs, insurance policies and licenses all expire — usually at the worst possible moment.</p>
+        </article>
+        <article class="p-card glass glow-card">
+          <span class="p-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M9 9l6 6M15 9l-6 6"/></svg></span>
+          <h3>Filing a claim is a scavenger hunt</h3>
+          <p>Finding the receipt, the product details and the purchase date turns a 10-minute task into a day of searching.</p>
+        </article>
+      </div>
+
+      <div class="fix-banner" data-reveal>
+        <div>
+          <span class="eyebrow eyebrow-light fix-badge"><span class="dot"></span>The fix</span>
+          <h3>MyWarranty fixes all four.</h3>
+          <p>Scan a receipt once — MyWarranty reads it, files it, watches the clock, and reminds you before anything expires. Your vault is backed up to your account, so a lost phone never means lost coverage.</p>
+        </div>
+        <div class="tl" aria-label="Reminder timeline">
+          <div class="tl-step"><span class="tl-dot">30</span><small>days before</small></div>
+          <span class="tl-line"></span>
+          <div class="tl-step"><span class="tl-dot">7</span><small>days before</small></div>
+          <span class="tl-line"></span>
+          <div class="tl-step"><span class="tl-dot">1</span><small>day before</small></div>
+          <span class="tl-line"></span>
+          <div class="tl-step"><span class="tl-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M18.4 9a6.4 6.4 0 10-12.8 0c0 6-2.6 7.6-2.6 7.6h18s-2.6-1.6-2.6-7.6"/><path d="M13.7 20a2 2 0 01-3.4 0"/></svg></span><small>reminder hits</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow"><span class="dot"></span>Features</span>
+        <h2>Built to make forgetting <span class="hl">impossible</span></h2>
+      </div>
+
+      <div class="feat-grid" data-reveal-group>
+        <article class="f-card glass glow-card">
+          <span class="f-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="15" rx="3"/><circle cx="12" cy="12" r="3.4"/><path d="M12 8.6V12l1.7 1.3"/></svg></span>
+          <h3>One vault for everything</h3>
+          <p>Warranties live next to expiring documents — passport, ID card, insurance, driver's license, visa. Search, sort, filter, and see status at a glance: active, expiring soon, or expired.</p>
+          <span class="tag">Warranties + documents in one place</span>
+        </article>
+        <article class="f-card glass glow-card">
+          <span class="f-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8V6a2 2 0 012-2h2M16 4h2a2 2 0 012 2v2M20 16v2a2 2 0 01-2 2h-2M8 20H6a2 2 0 01-2-2v-2"/><circle cx="12" cy="12" r="3.2"/></svg></span>
+          <h3>Scan a receipt — the rest is automatic</h3>
+          <p>Point the camera at any receipt. On-device OCR reads the store, product, date and total, then pre-fills the form. Everything is processed on the phone — no uploads needed for scanning.</p>
+          <span class="tag">OCR scan → auto-filled details</span>
+        </article>
+        <article class="f-card glass glow-card">
+          <span class="f-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18.4 9a6.4 6.4 0 10-12.8 0c0 6-2.6 7.6-2.6 7.6h18s-2.6-1.6-2.6-7.6"/><path d="M13.7 20a2 2 0 01-3.4 0"/></svg></span>
+          <h3>Reminders that never sleep</h3>
+          <p>Get notified 30, 7 and 1 day before every expiry, at 9:00 — for warranties and documents alike. Scheduled on your phone and pushed from the cloud, so you're warned even with the app closed.</p>
+          <span class="tag">Phone + cloud push, even with the app closed</span>
+        </article>
+        <article class="f-card glass glow-card">
+          <span class="f-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18.5a4.5 4.5 0 01-.9-8.9A6 6 0 0117.8 11h.2a3.75 3.75 0 010 7.5H7z"/><path d="M12 16v-4.5M10.2 13.2L12 11.4l1.8 1.8"/></svg></span>
+          <h3>Cloud backup &amp; real-time sync</h3>
+          <p>Sign in and your vault is backed up automatically. New phone? Sign in and everything is back. Changes sync in real time, and deletions propagate safely across devices.</p>
+          <span class="tag">New phone → sign in → everything restored</span>
+        </article>
+        <article class="f-card glass glow-card">
+          <span class="f-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/><path d="M14 3v5h5"/><path d="M9.5 14.5l1.8 1.8 3.4-3.6"/></svg></span>
+          <h3>Claim wizard with generated letters</h3>
+          <p>Something broke? Describe what went wrong and MyWarranty drafts your claim: a professional PDF letter with product details and receipt embedded — or plain text for email. History kept per item.</p>
+          <span class="tag">PDF claim letter, receipt attached</span>
+        </article>
+        <article class="f-card glass glow-card">
+          <span class="f-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 20h16"/><path d="M7 20v-5M12 20V9M17 20v-8"/></svg></span>
+          <h3>Stats dashboard</h3>
+          <p>See the value you're protecting: items tracked, total value, expiring soon, already expired — plus value by category and where you spend the most, broken down by store.</p>
+          <span class="tag">Know what your coverage is worth</span>
+        </article>
+        <article class="f-card glass glow-card">
+          <span class="f-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="16" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span>
+          <h3>Calendar view</h3>
+          <p>A month grid shows every expiry as a color-coded dot — green (active), amber (expiring), red (expired). Tap any day to see exactly what expires then.</p>
+          <span class="tag">Your deadlines, at a glance</span>
+        </article>
+        <article class="f-card glass glow-card">
+          <span class="f-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v10M8 10.5l4 4 4-4"/><path d="M4.5 19.5h15"/></svg></span>
+          <h3>Export, restore &amp; full control</h3>
+          <p>Export a CSV, a formatted PDF report, or a complete JSON backup. Restore at any time — and deleting your account wipes your cloud data and local files for good.</p>
+          <span class="tag">Your data is yours</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section" id="how">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow"><span class="dot"></span>How it works</span>
+        <h2>Three steps. <span class="hl">Then forget about it.</span></h2>
+      </div>
+      <div class="steps" data-reveal-group>
+        <article class="step glass glow-card">
+          <span class="step-num">1</span>
+          <h3>Scan or add</h3>
+          <p>Snap the receipt — OCR fills in the store, product, date and price. Or add any item manually in seconds.</p>
+        </article>
+        <span class="step-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"/><path d="M13 6l6 6-6 6"/></svg></span>
+        <article class="step glass glow-card">
+          <span class="step-num">2</span>
+          <h3>Set the expiry</h3>
+          <p>Pick the warranty term or the document's expiry date. Status colors and the calendar take over from there.</p>
+        </article>
+        <span class="step-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"/><path d="M13 6l6 6-6 6"/></svg></span>
+        <article class="step glass glow-card">
+          <span class="step-num">3</span>
+          <h3>Relax</h3>
+          <p>Reminders arrive at 30, 7 and 1 day — on time, every time. File a claim with one tap if anything breaks.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRIVACY & PERSONALIZATION ============ -->
+  <section class="section" id="privacy">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow"><span class="dot"></span>Privacy &amp; personalization</span>
+        <h2>Private by design. <span class="hl">Yours in every language.</span></h2>
+      </div>
+
+      <div class="priv-grid" data-reveal-group>
+        <article class="v-card glass glow-card">
+          <span class="v-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8.5 10.5V7.5a3.5 3.5 0 017 0v3"/></svg></span>
+          <span class="pin" aria-hidden="true"><i class="f"></i><i class="f"></i><i></i><i></i></span>
+          <h3>App lock</h3>
+          <p>Protect the vault with a 4-digit PIN and fingerprint unlock. The app locks automatically 10 seconds after you leave it — and after too many wrong attempts, it locks itself out.</p>
+        </article>
+        <article class="v-card glass glow-card">
+          <span class="v-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7.5 3v5.5c0 4.8-3.2 7.7-7.5 9.5-4.3-1.8-7.5-4.7-7.5-9.5V6z"/><path d="M9 12l2 2 4-4.5"/></svg></span>
+          <h3>Your account, your data</h3>
+          <p>Every account can only ever read its own vault. Receipt photos stay on your device — they are not uploaded. Deleting your account removes your cloud data, local files and the account itself.</p>
+        </article>
+        <article class="v-card glass glow-card">
+          <span class="v-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.7 2.3 4 5.2 4 8.5s-1.3 6.2-4 8.5c-2.7-2.3-4-5.2-4-8.5s1.3-6.2 4-8.5z"/></svg></span>
+          <div class="langs" aria-label="Supported languages"><span lang="en">English</span><span lang="fr">Français</span><span lang="ar" dir="rtl">العربية</span><span lang="es">Español</span><span lang="pt">Português</span><span lang="zh">中文</span><span lang="ja">日本語</span><span lang="hi">हिन्दी</span><span lang="nl">Nederlands</span><span lang="de">Deutsch</span></div>
+          <h3>10 languages, local formats</h3>
+          <p>With right-to-left support for Arabic. Prices show in your country's currency automatically.</p>
+        </article>
+        <article class="v-card glass glow-card">
+          <span class="v-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13.5A8 8 0 1110.5 4 6.5 6.5 0 0020 13.5z"/></svg></span>
+          <span class="mini-toggle" aria-hidden="true"><span class="knob"></span></span>
+          <h3>Dark mode</h3>
+          <p>A carefully tuned dark theme follows your system — or stays light or dark, your choice. Instant, everywhere.</p>
+        </article>
+        <article class="v-card glass glow-card" style="grid-column:1/-1;flex-direction:row;align-items:center;gap:20px">
+          <span class="v-ic" style="flex-shrink:0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 9.5a12 12 0 0116 0"/><path d="M7 13a8 8 0 0110 0"/><path d="M10 16.5a4 4 0 014 0"/><circle cx="12" cy="19.5" r="1" fill="currentColor" stroke="none"/></svg></span>
+          <div>
+            <h3>Works offline, syncs when it can</h3>
+            <p style="margin-top:6px">Add, edit and scan with no connection — everything is stored locally first. When you're back online, changes sync to your account automatically. Your vault is never blocked by a bad signal.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow"><span class="dot"></span>Pricing</span>
+        <h2>Start free. <span class="hl">Go Premium when you outgrow it.</span></h2>
+        <p>Every core feature is free for up to 5 items. Premium is a simple yearly plan — no tiers, no surprises.</p>
+      </div>
+
+      <div class="plans" data-reveal-group>
+        <article class="plan glass glow-card">
+          <h3>Free</h3>
+          <div class="price"><b>$0</b><span>/ forever</span></div>
+          <p class="plan-sub">Up to 5 items total (warranties + documents)</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg>Receipt scanning with OCR</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg>Reminders at 30, 7 and 1 day (local + cloud push)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg>Documents tracker</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg>Calendar, search, sort &amp; status colors</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg>Stats dashboard</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg>Claim letter generator (PDF / text)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg>Cloud backup &amp; sync</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg>App lock (PIN + fingerprint)</li>
+          </ul>
+          <a href="#cta" class="btn btn-ghost btn-block">Start free</a>
+        </article>
+
+        <article class="plan plan-pro">
+          <span class="launch-badge">Launch offer — first year $20</span>
+          <h3>Premium</h3>
+          <div class="price"><s>$29</s><b>$20</b><span>/ first year</span></div>
+          <p class="plan-sub">Then $29/year. Cancel anytime.*</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg><span><strong>Unlimited</strong> warranties &amp; documents</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg><span><strong>Family sharing</strong> included — cover up to 5 family members (rolling out with billing)</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg><span><strong>Cloud photo backup</strong> for receipts (coming soon)</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg><span>Everything in Free, always</span></li>
+          </ul>
+          <a href="#cta" class="btn btn-light btn-block">Go Premium</a>
+        </article>
+      </div>
+
+      <div class="compare glass" data-reveal>
+        <div class="cmp-scroll">
+          <div class="cmp-row cmp-head"><span>Feature</span><span>Free</span><span>Premium</span></div>
+          <div class="cmp-row"><span>Items (warranties + documents)</span><span class="cmp-strong">Up to 5</span><span class="cmp-strong cmp-pro">Unlimited</span></div>
+          <div class="cmp-row"><span>OCR receipt scanning</span><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
+          <div class="cmp-row"><span>Reminders (local + cloud push)</span><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
+          <div class="cmp-row"><span>Cloud backup &amp; sync</span><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
+          <div class="cmp-row"><span>Claim letter PDF</span><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
+          <div class="cmp-row"><span>Family sharing</span><span class="cmp-no">—</span><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
+          <div class="cmp-row"><span>Cloud photo backup</span><span class="cmp-no">—</span><span class="cmp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
+        </div>
+      </div>
+      <p class="fineprint">* Auto-renewing yearly subscription. Prices in USD; local currency shown in the app. Launch offer: first year $20 instead of $29 for new subscribers.</p>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow"><span class="dot"></span>Questions</span>
+        <h2>Frequently asked</h2>
+      </div>
+
+      <div class="faq-list" data-reveal-group>
+        <div class="faq-item glass">
+          <button class="faq-q" id="faq-q1" aria-expanded="false" aria-controls="faq-a1">Does it work without internet?<span class="faq-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 6v12M6 12h12"/></svg></span></button>
+          <div class="faq-a" id="faq-a1" role="region" aria-labelledby="faq-q1"><p>Yes. Everything works offline — scanning, adding, editing, reminders. Changes sync to your account when you're back online.</p></div>
+        </div>
+        <div class="faq-item glass">
+          <button class="faq-q" id="faq-q2" aria-expanded="false" aria-controls="faq-a2">What happens if I lose my phone or change devices?<span class="faq-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 6v12M6 12h12"/></svg></span></button>
+          <div class="faq-a" id="faq-a2" role="region" aria-labelledby="faq-q2"><p>Sign in on the new device and your vault is restored from the cloud: warranties, documents, settings and history.</p></div>
+        </div>
+        <div class="faq-item glass">
+          <button class="faq-q" id="faq-q3" aria-expanded="false" aria-controls="faq-a3">Are my receipt photos uploaded?<span class="faq-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 6v12M6 12h12"/></svg></span></button>
+          <div class="faq-a" id="faq-a3" role="region" aria-labelledby="faq-q3"><p>Not today — receipt photos stay on your device. Cloud photo backup is part of Premium and is coming soon.</p></div>
+        </div>
+        <div class="faq-item glass">
+          <button class="faq-q" id="faq-q4" aria-expanded="false" aria-controls="faq-a4">Can I track my passport and insurance too?<span class="faq-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 6v12M6 12h12"/></svg></span></button>
+          <div class="faq-a" id="faq-a4" role="region" aria-labelledby="faq-q4"><p>Yes. The documents tracker covers passports, ID cards, insurance policies, driver's licenses, visas and anything else with an expiry date — with its own reminders.</p></div>
+        </div>
+        <div class="faq-item glass">
+          <button class="faq-q" id="faq-q5" aria-expanded="false" aria-controls="faq-a5">How do the reminders reach me if the app is closed?<span class="faq-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 6v12M6 12h12"/></svg></span></button>
+          <div class="faq-a" id="faq-a5" role="region" aria-labelledby="faq-q5"><p>Two ways: notifications are scheduled directly on your phone, and a cloud service also pushes reminders to your device. That's why they still arrive weeks after you last opened the app.</p></div>
+        </div>
+        <div class="faq-item glass">
+          <button class="faq-q" id="faq-q6" aria-expanded="false" aria-controls="faq-a6">Is my data private?<span class="faq-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 6v12M6 12h12"/></svg></span></button>
+          <div class="faq-a" id="faq-a6" role="region" aria-labelledby="faq-q6"><p>Yes. Access is strictly per-account — only you can read your vault. There's an app lock for your phone, and deleting your account erases your cloud data and local files.</p></div>
+        </div>
+        <div class="faq-item glass">
+          <button class="faq-q" id="faq-q7" aria-expanded="false" aria-controls="faq-a7">Which platforms are supported?<span class="faq-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 6v12M6 12h12"/></svg></span></button>
+          <div class="faq-a" id="faq-a7" role="region" aria-labelledby="faq-q7"><p>Android today. The iOS app shares the same codebase and is in development.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="section" id="cta" style="padding-top:20px">
+    <div class="container">
+      <div class="cta-panel" data-reveal>
+        <span class="cta-glow g1" aria-hidden="true"></span>
+        <span class="cta-glow g2" aria-hidden="true"></span>
+        <span class="eyebrow eyebrow-light"><span class="dot"></span>Ready when you are</span>
+        <h2>Never lose a warranty <span class="hl-light">again.</span></h2>
+        <p>Scan once, relax for years. MyWarranty watches every expiry date so you can use the coverage you already paid for.</p>
+        <div class="cta-actions">
+          <a href="mailto:mywarrantyapppro@gmail.com?subject=Notify%20me%20when%20MyWarranty%20launches%20(Android)" class="btn btn-light">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M18.4 9a6.4 6.4 0 10-12.8 0c0 6-2.6 7.6-2.6 7.6h18s-2.6-1.6-2.6-7.6"/><path d="M13.7 20a2 2 0 01-3.4 0"/></svg>
+            Notify me — Android launch
+          </a>
+          <a href="mailto:mywarrantyapppro@gmail.com?subject=Notify%20me%20when%20MyWarranty%20comes%20to%20iOS" class="btn btn-glass">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>
+            Notify me — iOS
+          </a>
+        </div>
+        <p class="cta-meta">Android &amp; iOS • Free for up to 5 items • Premium $29/year — first year $20</p>
+        <a class="cta-mail" href="mailto:mywarrantyapppro@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="13" rx="2.5"/><path d="M4 7l8 6 8-6"/></svg>
+          mywarrantyapppro@gmail.com
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="foot-rule">
+      <div class="foot-brand">
+        <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10v17.2l-2.5-1.7-2.5 1.7-2.5-1.7L7 20.2V3z"/><path d="M9.5 11l1.8 1.8 3.5-3.8"/></svg></span>
+        <small><strong style="color:var(--ink);font-size:15px">MyWarranty</strong><br>Warranty &amp; document expiry tracker</small>
+      </div>
+      <nav class="foot-links" aria-label="Footer">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="privacy/">Privacy</a>
+        <a href="mailto:mywarrantyapppro@gmail.com">Contact</a>
+      </nav>
+      <div class="foot-note">© 2026 MyWarranty<br>Product overview — features &amp; pricing</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>
